@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Poppins:wght@600&display=swap');
+
+* {
+    font-family: 'Fanwood Text', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact__container {
+
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    column-gap: 6rem;
+    padding-bottom: 3rem;
+}
+
+.contact__title {
+
+    text-align: center;
+    font-size: (--h3-font-size);
+    font-weight: var(400);
+    margin-bottom: 15px;
+}
+
+.contact__info {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 300px;
+}
+
+.contact__card {
+    background-color: aliceblue;
+    border: 1px solid color rgba(0, 0, 0, 0.062);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    margin: 5px;
+    width: 400px;
+}
+
+.contact__card-icon {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+}
+
+.contact__card-title,
+.contact_-card-data {
+    font-size: 10px;
+}
+
+.contact__card-title {
+    font-weight: 200;
+}
+
+.contact__card-data {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.contact__button {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.25rem;
+}
+
+.contact__info {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 300px;
+    justify-content: center;
+    column-gap: 0.25rem;
+}
+
+.contact__content {
+    justify-content: space-between;
+}
+
+.contact__form {
+    width: 360px;
+}
+
+.contact__button:hover .contact__button-icon {
+    transform: translate(0.25rem);
+}
+
+.contact__form {
+    width: 360px;
+}
+
+.section__subtitle {
+    font-size: 20px;
+}
+
+.contact__form-div {
+    position: relative;
+    margin-bottom: 5px;
+    height: 3rem;
+    margin: 45px 0px 45px 0px;
+
+}
+
+.contact__form-div textarea {
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.39);
+    background-color: aliceblue;
+    font-size: 13px;
+}
+
+.contact__form-div button {
+    display: block;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin: auto;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(54, 54, 54);
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact__form-div button:hover {
+    color: black;
+    background-color: aliceblue;
+}
+
+.contact__form-input {
+    position: absolute;
+    font-size: 13px;
+    top: 0;
+    left: 0;
+    border: 2px solid rgba(0, 0, 0, 0.39);
+    width: 100%;
+    height: 100%;
+
+    background: none;
+    color: rgb(78, 163, 163);
+    outline: none;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    background-color: aliceblue;
+    z-index: 1;
+}
+
+.contact__form-tag {
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    top: -0.90rem;
+    left: 1.25rem;
+    font-family: 'Fanwood Text', serif;
+    font-family: 'poppins';
+
+    padding: 0.25rem;
+    z-index: 10;
+}
+
+.contact__form-input {
+    position: absolute;
+    top: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .contact__container {
+        column-gap: 3rem;
+    }
+
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .contact__form-input,
+    .contact__form-div textarea {
+        width: 87%;
+    }
+
+    .contact__form {
+        margin: 0 auto;
+    }
+
+    .contact__card {
+        width: 87%;
+    }
+
+    .contact__form button {
+        margin-bottom: 3rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:576px) {
+    .contact__info {
+        grid-template-columns: 1fr;
+    }
+
+    .contact__form {
+        width: 100%;
+    }
+
+    .contact__container {
+        margin-left: 3rem;
+    }
+
+
+
+}
+
+/* for small devices */
+@media screen and (max-width: 350px) {
+    .contact__form-tag {
+        top: -0.95rem;
+    }
+
+    .contact__form-div button {
+
+
+        margin-right: 4.5rem;
+
+    }
+}
