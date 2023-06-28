@@ -50,7 +50,7 @@ const Services = () => {
                         <i className="uil uil-check-circle services__modal-icon"> </i>
                  
                         <p className="services__modal-info">
-                           I create UX element interactions
+                           I create UX element interactions.
                         </p>
                         
                     </li>
