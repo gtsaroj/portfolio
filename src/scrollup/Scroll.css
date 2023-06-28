@@ -18,3 +18,15 @@
 .scrollUp:hover {
     background-color: aquamarine;
 }
+
+@media screen and (max-width: 992px) {
+
+    .scrollUp {
+        display: none;
+    }
+
+    .scrollUp__icon {
+        display: none;
+    }
+
+}
