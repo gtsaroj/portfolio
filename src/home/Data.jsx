@@ -55,7 +55,7 @@ const Data = () => {
                 </svg>
                 </h1>
 <h3 className='home__subtitle'>MERN Stack Developer</h3>
-<p className='home__description'>Work for money & design for love!<br/>I am Saroj GT, an MERN Stack Developer based in Nepal .</p>
+<p className='home__description'>Work for money & design for love!<br/>I am Saroj GT,  MERN Stack Developer based in Nepal .</p>
 
 <a  className="showme" href="#contact" >
     show me
