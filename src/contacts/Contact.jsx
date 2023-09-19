@@ -1,6 +1,10 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./Contact.css"
+import React from 'react';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
     const form = useRef();
@@ -12,9 +16,9 @@ const Contact = () => {
             , 'template_1xbcmdp',
             form.current, 'BmBRoInz2nzpO4_Mo')
             .then((result) => {
-                alert("Message was sent.");
+                toast.success("Message was sent successfully!")
             }, (error) => {
-                console.log(error.text);
+                toast.error("Please Check Your Internet!")
             });
     };
 
@@ -64,7 +68,7 @@ const Contact = () => {
                                 name='name'
                                 className='contact__form-input'
                                 placeholder='Insert your name'
-                            />
+                                required />
                         </div>
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Mail</label>
@@ -72,12 +76,12 @@ const Contact = () => {
                                 name='email'
                                 className='contact__form-input'
                                 placeholder='Insert your Email'
-                            />
+                                required />
                         </div>
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Project</label>
                             <textarea name="name" id="" cols="30" rows="10"
-                                placeholder='Write your project'></textarea>
+                                placeholder='Write your project' required></textarea>
                             <button>Send Message</button>
                         </div>
 
@@ -86,6 +90,7 @@ const Contact = () => {
 
                 </div>
             </div>
+            <ToastContainer autoClose={2000} />
         </section>
     )
 }
