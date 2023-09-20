@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./Contact.css"
-import React from 'react';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,8 +8,19 @@ import 'react-toastify/dist/ReactToastify.css';
 const Contact = () => {
     const form = useRef();
 
+
     const sendEmail = (e) => {
         e.preventDefault();
+
+        // Add validation here to check if the input fields are empty
+        const name = form.current.name.value;
+        const email = form.current.email.value;
+        const project = form.current.project.value;
+
+        if (!name || !email || !project) {
+            toast.error("Please fill in all the required fields.");
+            return;
+        }
 
         emailjs.sendForm('service_i0jqolo'
             , 'template_1xbcmdp',
@@ -72,7 +82,7 @@ const Contact = () => {
                         </div>
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Mail</label>
-                            <input type='Mail'
+                            <input type='email'
                                 name='email'
                                 className='contact__form-input'
                                 placeholder='Insert your Email'
