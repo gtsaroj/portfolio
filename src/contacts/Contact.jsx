@@ -12,15 +12,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        // Add validation here to check if the input fields are empty
-        const name = form.current.name.value;
-        const email = form.current.email.value;
-        const project = form.current.project.value;
 
-        if (!name || !email || !project) {
-            toast.error("Please fill in all the required fields.");
-            return;
-        }
 
         emailjs.sendForm('service_i0jqolo'
             , 'template_1xbcmdp',
