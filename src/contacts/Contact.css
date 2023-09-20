@@ -122,12 +122,12 @@
     border: 1px solid rgb(54, 54, 54);
     color: aliceblue;
     background-color: rgb(0, 0, 0);
-    font-family: 'Courier New', Courier, monospace;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contact__form-div button:hover {
-    color: black;
-    background-color: aliceblue;
+      color: rgb(254, 253, 253);
+    background-color: #141414;
 }
 
 .contact__form-input {
