@@ -21,6 +21,7 @@
   gap: 20px;
   justify-content: center;
   cursor: pointer;
+  flex-wrap: wrap;
 }
 .projectNav{
     background-color: rgb(15, 12, 12);
@@ -40,6 +41,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 15px;
+  flex-wrap:wrap;
 }
 .projectData {
   display: flex;
@@ -101,4 +103,21 @@
   font-size: medium;
   margin: 4px 0px 15px 0px;
 }
+
+
+
+/* ========================breakdown============================ */
+ @media screen and (max-width: 778px) {
+  .work{
+    margin-top: 100px;
+  }
+ }
+ @media screen and (max-width: 486px) {
+  .projectImg {
+    width: 177px;
+    height: 108px;
+  
+}
+}
+
 
