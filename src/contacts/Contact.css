@@ -108,7 +108,7 @@
     outline: none;
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.39);
-    background-color: aliceblue;
+    background-color:white;
     font-size: 13px;
 }
 
@@ -119,15 +119,17 @@
     margin: auto;
     padding: 10px 30px 10px 30px;
     border-radius: 5px;
-    border: 1px solid rgb(54, 54, 54);
+    border: 3px solid rgb(0, 0, 0);
     color: aliceblue;
     background-color: rgb(0, 0, 0);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px ;
+    font-weight: 500;
 }
 
 .contact__form-div button:hover {
-    color: black;
-    background-color: aliceblue;
+    border: 3px solid rgb(18, 21, 22);
+    background-color: rgb(18, 21, 22);
 }
 
 .contact__form-input {
@@ -144,7 +146,7 @@
     outline: none;
     border-radius: 0.75rem;
     padding: 1.5rem;
-    background-color: aliceblue;
+    background-color: white;
     z-index: 1;
 }
 
@@ -152,13 +154,14 @@
     font-weight: 500;
     font-size: 16px;
     position: absolute;
-    top: -0.90rem;
+    top: -0.9rem;
     left: 1.25rem;
     font-family: 'Fanwood Text', serif;
     font-family: 'poppins';
-
     padding: 0.25rem;
     z-index: 10;
+    background: white;
+    border-radius: 83%;
 }
 
 .contact__form-input {

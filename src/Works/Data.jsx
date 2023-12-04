@@ -13,7 +13,7 @@ export const ProjectData = [
     image: require('./Projects/f2.png'),
     title: "x-mato",
     category: "Ecommerce",
-    link: 'x-mato.onrender.com'
+    link: 'https://x-mato.onrender.com'
   },
   {
     id: 3,
