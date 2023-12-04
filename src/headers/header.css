@@ -43,7 +43,8 @@
     font-size: var(--small-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
-    transition: .3s;
+    transition: .3s ease-in-out;
+    padding: 4px 10px;
 }
 
 .nav__icon,
@@ -107,7 +108,9 @@
     .nav__icon {
         font-size: 1.2rem;
     }
-
+.nav__item{
+    
+}
     .nav__close {
         position: absolute;
         right: 1.3rem;
