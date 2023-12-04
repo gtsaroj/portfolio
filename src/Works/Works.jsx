@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ProjectData, projectNav } from "./Data";
 import "./Works.css";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { Link } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const Works = () => {
   const [projects, setProjects] = useState([]);
   const [item, setItem] = useState({ name: "All" });
   const [active, setActive] = useState(0);
- 
+  // const navigate = useNavigate();
 
   useEffect(() => {
     if (item.name === "All") {
@@ -24,11 +24,8 @@ const Works = () => {
 
   function handleClick(e, index) {
     setItem({ name: e.target.textContent });
-    setActive(index)
+    setActive(index);
   }
-
-
-
 
   return (
     <div className="works">
@@ -36,7 +33,7 @@ const Works = () => {
         {projectNav.map((item, index) => (
           <div
             className={`projectNav ${index === active ? "active" : ""}`}
-            key={index} 
+            key={index}
             onClick={(e) => handleClick(e, index)}
           >
             {item.name}
@@ -53,8 +50,15 @@ const Works = () => {
               <h2>{item.title}</h2>
             </div>
             <div className="demo">
-              {/* <Link to={item.link} className="demo_button">demo</Link> */}
-             <span><ArrowForwardIosIcon/></span>
+              <button className="demo_button">
+              <a href={item.link} target="_blank" rel="noopener noreferrer" className="demo_button">
+  demo
+</a>
+</button>
+
+              <span>
+             <ArrowRightAltIcon/>
+              </span>
             </div>
           </div>
         ))}

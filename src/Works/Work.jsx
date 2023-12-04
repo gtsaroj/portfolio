@@ -4,8 +4,8 @@ import Works from './Works'
 const Work = () => {
   return (
     <div className="work">
-        <h3>Portfolio</h3>
-        <h2>Most Recent Projects</h2>
+        <h2>Portfolio</h2>
+        <h3>Most Recent Projects</h3>
         <div className="show_work">
             <Works/>
         </div>
