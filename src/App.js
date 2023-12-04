@@ -9,6 +9,7 @@ import Contact from './contacts/Contact';
 import Footer from './footer/Footer';
 import Qualification from './qualification/Qualification';
 import ScrollUp from './scrollup/ScrollUp';
+import Work from './Works/Work';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
         <Qualification />
         <Contact />
 
-
+<Work/>
       </main>
       <Footer />
       <ScrollUp />

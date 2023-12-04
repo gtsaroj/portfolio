@@ -122,7 +122,7 @@
 
 /* .active modal */
 .active-modal {
-    opacity: 1;
+    opacity: 10;
     visibility: visible;
 }
 
