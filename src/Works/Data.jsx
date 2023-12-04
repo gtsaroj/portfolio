@@ -3,34 +3,30 @@ import React from "react";
 export const ProjectData = [
   {
     id: 1,
-    image: require('./f1.jpg'),
+    image: require('./Projects/f1.png'),
     title: "Ecommerce website",
     category: "web development",
+    // link: ''
   },
   {
     id: 2,
-    image: require('./f1.jpg'),
+    image: require('./Projects/f2.png'),
     title: "Ecommerce website",
     category: "web design",
   },
   {
     id: 3,
-    image: require('./f1.jpg'),
+    image: require('./Projects/f3.png'),
     title: "Ecommerce website",
     category: "web development",
   },
   {
     id: 4,
-    image: require('./f1.jpg'),
+    image: require('./Projects/f4.png'),
     title: "Ecommerce website",
     category: "video editing",
   },
-  {
-    id: 5,
-    image: require('./f1.jpg'),
-    title: "Ecommerce website",
-    category: "web development",
-  },
+ 
 ];
 
 export const projectNav = [
@@ -41,9 +37,9 @@ export const projectNav = [
     name: "web development",
   },
   {
-    name: "design",
+    name: " web design",
   },
   {
-    name: "Video editing",
+    name: "video editing",
   },
 ];

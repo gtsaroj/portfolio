@@ -1,45 +1,88 @@
-.projectNav_filter{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center ;
-}
-.projectData_filter{
-display: flex;
-flex-direction: row;
-justify-content: center;
-}
-.projectData{
+.works{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 200px;
-    height: 200px;
+    gap: 25px;
+}
 
+.projectNav_filter {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  cursor: pointer;
 }
-.projectImg{
-    width: 150px;
-    height: 100px;
+.projectNav{
+    background-color: rgb(15, 12, 12);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
-.projectImg img{
-    width: 100%;
-    height: 100%;
+
+.active{
+    background-color: rgb(131, 33, 33);
+    border-radius: 3px;
 }
-.demo .demo_button{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    background-color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    transition: 0.1s ease-in-out;
+
+.projectData_filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  gap: 15px;
 }
-.demo button:hover{
-    gap: 14px;
+.projectData {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* width: 200px; */
+  border: 2px solid black;
+  padding: 7px 10px 0px 10px;
+  border-radius: 4px;
+  /* background-color: rgb(219, 201, 173); */
+  position: relative;
+  cursor: pointer;
 }
-.projectTitle h2{
-    font-size: medium;
-    margin: 6px 0px 6px 0px;
+.projectImg {
+  width: 200px;
+  height: 163px;
+  border: 13px solid #486699;
+  border-radius: 67px 85px 45px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.projectData:hover .projectImg{
+    transform: scale(1.1);
+}
+.projectImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+.demo {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  place-content: center;
+  gap: 10px;
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.1s ease-in-out;
+  position: absolute;
+  left: 83px;
+  bottom: -17px;
+  padding: 0px 0px 0px 3px;
+}
+.demo_button {
+  background-color: white;
+}
+.demo span {
+  font-size: 12px;
+}
+.demo:hover {
+  gap: 14px;
+}
+.projectTitle h2 {
+  font-size: medium;
+  margin: 4px 0px 15px 0px;
 }
