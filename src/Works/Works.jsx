@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ProjectData, projectNav } from "./Data";
 import "./Works.css";
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Link } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 
@@ -53,12 +53,15 @@ const Works = () => {
               <button className="demo_button">
               <a href={item.link} target="_blank" rel="noopener noreferrer" className="demo_button">
   demo
+             <KeyboardArrowRightIcon/>
+             
 </a>
 </button>
+<button className="viewButton">view code
+<KeyboardArrowRightIcon/>
+</button>
 
-              <span>
-             <ArrowRightAltIcon/>
-              </span>
+           
             </div>
           </div>
         ))}
