@@ -52,14 +52,14 @@ const Works = () => {
             <div className="demo">
               <button className="demo_button">
               <a href={item.link} target="_blank" rel="noopener noreferrer" className="demo_button">
-  demo
+   view demo
              <KeyboardArrowRightIcon/>
              
 </a>
 </button>
-<button className="viewButton">view code
+<a  href={item.github} className="viewButton">view code
 <KeyboardArrowRightIcon/>
-</button>
+</a>
 
            
             </div>

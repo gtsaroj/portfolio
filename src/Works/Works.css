@@ -115,7 +115,7 @@
 
 .projectTitle h2 {
   font-size: 14px;
-  margin: 4px 0px 15px 0px;
+  margin: 6px 0px 13px 0px;
 
   color: white;
 }
@@ -127,6 +127,8 @@
   border: none;
   background-color: white;
   align-items: center;
+  color: black;
+
   /* justify-content: center; */
 }
 .viewButton:hover {
