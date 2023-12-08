@@ -98,10 +98,10 @@ const toggleTab = (index)=>{
 
         <div>
             <h2 className="qualification__title">Bachelor in IT</h2>
-            <span className="qualification__subtitle">Texas college of management & IT</span>
+            <span className="qualification__subtitle">Texas college of IT and management</span>
             <div className="qualification__calender">
                 <i className="uil uil-calender-alt"></i>
-                2020 -2021
+                2022-continue
             </div>
         </div>
        
