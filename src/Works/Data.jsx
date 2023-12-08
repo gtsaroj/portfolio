@@ -30,7 +30,7 @@ export const ProjectData = [
     image: require('./Projects/f4.png'),
     title: "graphstick nepal",
     category: "Ecommerce",
-    link: 'https://grapstick-onlineshop.onrender.com/',
+    link: 'https://graphtick-online-shop.web.app/',
     github: 'https://github.com/gtsaroj/graphstick-clientside',
     
   },
