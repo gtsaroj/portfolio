@@ -111,6 +111,7 @@
     border: 2px solid rgba(0, 0, 0, 0.39);
     background-color:white;
     font-size: 13px;
+    padding: 1.5rem;
 }
 
 .contact__form-div button {
