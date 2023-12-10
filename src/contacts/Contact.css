@@ -113,6 +113,11 @@
     font-size: 13px;
     padding: 1.5rem;
 }
+.button{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
 
 .contact__form-div button {
     display: block;

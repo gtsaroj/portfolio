@@ -1,26 +1,36 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import "./Contact.css"
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ReactLoading from 'react-loading';
 
 const Contact = () => {
     const form = useRef();
 
+    const [isloading, setIsloading] = useState(false);
 
-    const sendEmail = (e) => {
+     const handleSubmit = (e) => {
+try {
         e.preventDefault();
-
+setIsloading(true)
         emailjs.sendForm('service_i0jqolo'
             , 'template_1xbcmdp',
             form.current, 'BmBRoInz2nzpO4_Mo')
             .then((result) => {
                 toast.success("Message was sent successfully!")
-            }, (error) => {
-                toast.error("Please Check Your Internet!")
+                setIsloading(false);
             });
-    };
+            
+
+} catch (error) {
+    toast.error("Please Check Your Internet!")
+}
+     }
+
+
+  
 
     return (
         <section className="contact section" id="contact">
@@ -61,7 +71,7 @@ const Contact = () => {
 
                 <div className="contact__content">
                     <h3 className="contact__title">Write me your project</h3>
-                    <form action="" ref={form} onSubmit={sendEmail} className="contact__form">
+                    <form action="" ref={form} onSubmit={handleSubmit} className="contact__form">
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>
                             <input type='text'
@@ -82,7 +92,9 @@ const Contact = () => {
                             <label className="contact__form-tag">Project</label>
                             <textarea name="name" id="" cols="30" rows="10"
                                 placeholder='Write your project' required></textarea>
-                            <button>Send Message</button>
+                            <button type='submit'>{ isloading ? < div> <ReactLoading type={'spin'} color={'#ffffff'} height={'20px'} width={'20px'} /> </div>
+                            : 'submit'
+}</button>
                         </div>
 
 
