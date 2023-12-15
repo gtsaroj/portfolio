@@ -6,14 +6,19 @@
     display: flex;
     justify-content: center;
     margin-bottom: var(--mb-2);
+    gap: 1rem;
 }
 
 .qualification__button {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: black;
     margin: 5px 5px 5px 5px;
     cursor: pointer;
+    padding: 1px 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
 .qualification__button:hover {
@@ -86,11 +91,27 @@
         margin-left: 2rem;
         margin-right: 2rem;
     }
+    .qualification__data {
+        column-gap: 5rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .qualification__section {
         grid-template-columns: initial;
+    }
+    .qualification__button {
+        font-size: 15px;
+        gap: 0px;
+    }
+    .qualification__title{
+        font-size: 14px;
+    }
+    .qualification__subtitle{
+        font-size: 14px;
+    }
+    .qualification__data {
+        column-gap: 4rem;
     }
 }
 
@@ -115,5 +136,15 @@
     .qualification__container {
         margin-left: 13px;
         margin-right: auto;
+    }
+    .qualification__button {
+        font-size: 15px;
+        gap: 0px;
+    }
+    .qualification__title{
+        font-size: 14px;
+    }
+    .qualification__subtitle{
+        font-size: 14px;
     }
 }

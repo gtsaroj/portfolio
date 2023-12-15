@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Info = () => {
   return (
@@ -6,21 +6,20 @@ const Info = () => {
       <div className="about__box">
         <i class="bx bx-award about__icon"></i>
         <h3 className="about__subtitle">Experience</h3>
-        <span className="about__subtitle">1 Year </span>
+        <span className="about__subtitle">Junior</span>
       </div>
       <div className="about__box">
         <i class="bx bx-briefcase-alt"></i>
         <h3 className="about__subtitle">Completed</h3>
-        <span className="about__subtitle">10+ Projects </span>
+        <span className="about__subtitle">6+ Projects </span>
       </div>
       <div className="about__box">
         <i class="bx bx-support"></i>
         <h3 className="about__subtitle">Support</h3>
-        <span className="about__subtitle">1 Year </span>
+        <span className="about__subtitle">Projects </span>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default Info
+export default Info;
