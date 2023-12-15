@@ -1,0 +1,14 @@
+[debug] [2023-12-15T10:37:41.819Z] ----------------------------------------------------------------------
+[debug] [2023-12-15T10:37:41.822Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-15T10:37:41.822Z] CLI Version:   12.9.1
+[debug] [2023-12-15T10:37:41.823Z] Platform:      win32
+[debug] [2023-12-15T10:37:41.823Z] Node Version:  v18.17.0
+[debug] [2023-12-15T10:37:41.824Z] Time:          Fri Dec 15 2023 16:22:41 GMT+0545 (Nepal Time)
+[debug] [2023-12-15T10:37:41.825Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-15T10:37:41.901Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-15T10:37:41.902Z] > authorizing via signed-in user (developersaroj326@gmail.com)
+[debug] [2023-12-15T10:37:41.902Z] [iam] checking project saroj-gt for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-15T10:37:41.905Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/saroj-gt:testIamPermissions [none]
+[debug] [2023-12-15T10:37:41.905Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/saroj-gt:testIamPermissions x-goog-quota-user=projects/saroj-gt
+[debug] [2023-12-15T10:37:41.905Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/saroj-gt:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
