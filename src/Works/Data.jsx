@@ -22,7 +22,7 @@ export const ProjectData = [
     image: require('./Projects/f3.png'),
     title: "Tic Tac Toe",
     category: "Game development",
-    link: 'https://cute-taiyaki-a1ad30.netlify.app/',
+    link: 'https://nepaligame.netlify.app/',
     github: 'https://github.com/gtsaroj/Tic-Tac-Toe',
   },
   {
