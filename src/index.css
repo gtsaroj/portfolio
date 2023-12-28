@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* General styling for the scrollbar */
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+/* Track (the area the thumb moves along) */
+::-webkit-scrollbar-track {
+  background-color: #929292; /* Set the color of the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background-color: #0a0909; /* Set the color of the thumb */
+  border-radius: 6px; /* Set the border-radius for rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Set the color of the thumb on hover */
+  margin: 10px;
+}
+
