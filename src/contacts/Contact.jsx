@@ -92,7 +92,10 @@ setIsloading(true)
                             <label className="contact__form-tag">Project</label>
                             <textarea name="name" id="" cols="30" rows="10"
                                 placeholder='Write your project' required></textarea>
-                            <button type='submit'>{ isloading ? < div> <ReactLoading type={'spin'} color={'#ffffff'} height={'20px'} width={'20px'} /> </div>
+
+                        </div>
+                        <div className="button">
+                        <button type='submit'>{ isloading ? < div> <ReactLoading type={'spin'} color={'#ffffff'} height={'20px'} width={'20px'} /> </div>
                             : 'submit'
 }</button>
                         </div>
