@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./header.css";
+import ThemeToggleButton from './ThemeToggleButton';
 const Header = () => {
     window.addEventListener("scroll", function () {
         const header = document.querySelector(".header");
@@ -9,9 +10,15 @@ const Header = () => {
 
     const [Toggle, showMenu] = useState(false)
     const [activeNav, setActiveNav] = useState();
+
+
+  
+
+
+
     return (
 
-        <header className='header'>
+        <div className={`header `}>
             <nav className="nav container">
                 <a href='index.html' className='nav__logo'>SAROJ GT</a>
 
@@ -54,11 +61,14 @@ const Header = () => {
                     </ul>
                     <i class="uil uil-times nav__close" onClick={() => showMenu(!Toggle)}></i>
                 </div>
+                <div className={`button-v1 `}  >
+                <ThemeToggleButton />
+               </div>
                 <div className='nav__toggle' onClick={() => showMenu(!Toggle)}>
                     <i class="uil uil-apps"></i>
                 </div>
             </nav>
-        </header>
+        </div>
 
     )
 }

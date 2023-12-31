@@ -29,7 +29,8 @@
 }
 
 .about__box {
-    background-color: var(--container-color);
+    background-color: var(--body_background);
+    box-shadow: var(--box_shadow);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.75rem;
     text-align: center;
@@ -38,22 +39,25 @@
 
 .about__icon {
     font-size: 1.5rem;
-    color: var(--title-color);
+    color: var(--body_color);
     margin-bottom: var(--mb-0-5);
 }
 
 .about__title {
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
+    color: var(--body_color);
 
 }
 
 .about__subtitle {
     font-size: var(14px);
+    color: var(--body_color);
 
 }
 
 .about__description {
+    color: var(--body_color);
     padding: 0 1rem 0 0rem;
     font-size: 13px;
     width: 100%;

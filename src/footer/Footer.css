@@ -1,6 +1,7 @@
 .footer {
-    background-color: beige;
+    background-color: var(--body_background);
     border-top: 1px rgba(0, 0, 0, 0.158);
+    box-shadow: 5px -2px 4px black;
 
 }
 
@@ -11,7 +12,7 @@
 
 .footer__title,
 .footer__link {
-    color: black
+    color: var(--body_color)
 }
 
 .footer__title {
@@ -33,7 +34,7 @@
 
 
 .footer__social-link {
-    color: rgb(0, 0, 0);
+    color: var(--body_color);
     font-size: 1.25rem;
     text-align: center;
     border-radius: 0.5rem;
@@ -43,7 +44,7 @@
 .footer__copy {
     display: block;
     margin-top: 0;
-    column-rule-color: black;
+    color: var(--body_color);
     text-align: center;
     font-size: 17px;
     margin-bottom: -6rem;

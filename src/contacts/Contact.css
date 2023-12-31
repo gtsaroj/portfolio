@@ -13,6 +13,7 @@
 }
 
 .contact__title {
+  color: var(--body_color);
   text-align: center;
   font-size: (--h3-font-size);
   font-weight: var(400);
@@ -26,29 +27,34 @@
 }
 
 .contact__card {
-  background-color: aliceblue;
+  background-color: var(--body_background);
   border: 1px solid color rgba(0, 0, 0, 0.062);
   padding: 1rem;
   border-radius: 0.75rem;
   text-align: center;
   margin: 5px;
   width: 400px;
-  box-shadow: 7px 4px 1px 2px #333434b8;
+  box-shadow: var(--box_shadow);
+  color: var(--body_color);
 }
 
 .contact__card-icon {
   font-size: 2rem;
   color: rgb(0, 0, 0);
   margin-bottom: 5px;
+  color: var(--body_color);
 }
 
 .contact__card-title,
 .contact_-card-data {
+  color: var(--body_color);
   font-size: 10px;
 }
 
 .contact__card-title {
+  color: var(--body_color);
   font-weight: 200;
+
 }
 
 .contact__card-data {
@@ -57,7 +63,7 @@
 }
 
 .contact__button {
-  color: rgb(0, 0, 0);
+  color: var(--body_color);
   font-size: 14px;
   display: inline-flex;
   align-items: center;
@@ -111,7 +117,7 @@ justify-content: baseline;
     outline: none;
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.39);
-    background-color: white;
+    background-color: var(--body_background);
     font-size: 13px;
     padding: 1.5rem;
 
@@ -128,17 +134,21 @@ justify-content: baseline;
   padding: 10px 90px;
   border-radius: 5px;
   border: 3px solid rgb(0, 0, 0);
-  color: aliceblue;
+  color: white;
   background-color: rgb(0, 0, 0);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   font-weight: 500;
+  transition: 0.2s ease-in-out;
   
 }
 
 .button button:hover {
-  border: 3px solid rgb(18, 21, 22);
-  background-color: rgb(18, 21, 22);
+  border: 3px solid var(--line);
+  background-color: var(--body_background);
+}
+.button button:checked{
+  transform: scale(1.05);
 }
 
 .contact__form-input {
@@ -153,7 +163,7 @@ justify-content: baseline;
   outline: none;
   border-radius: 0.75rem;
   padding: 1.5rem;
-  background-color: white;
+  background-color: var(--body_background);
   z-index: 1;
 }
 
@@ -167,11 +177,13 @@ justify-content: baseline;
   font-family: "poppins";
   padding: 0.25rem;
   z-index: 10;
-  background: white;
+  color: var(--body_color);
+  background: var(--body_background);
   border-radius: 83%;
 }
 
 .contact__form-input {
+  color: var(--body_color);
   position: absolute;
   top: 0;
 }

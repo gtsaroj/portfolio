@@ -37,22 +37,24 @@
 
  .home__social-icon {
      font-size: 1.25rem;
-     color: var(--title-color)
+     color: var(--body_color)
  }
 
  .home__social-icon:hover {
-     color: var(--title-color-dark);
+     color: var(--body_color-dark);
      ;
  }
 
  .home__title {
      font-size: 35px;
+     color: var(--body_color);
      margin-bottom: var(--mb-0-25);
-     filter: drop-shadow(4px 1px 1px rgb(65, 65, 65));
+     filter: var(--word_shadow);
 
  }
  .typscripter{
-    color: red;
+    color: var(--body_color);
+    background-color: white;
     filter: drop-shadow(4px 1px 1px rgb(65, 65, 65));
  }
 
@@ -81,6 +83,7 @@
  }
 
  .home__description {
+    color: var(--body_color);
      max-width: 400px;
      margin-bottom: 3rem;
  }
@@ -191,7 +194,7 @@
  }
 
  .home__scroll-name {
-     color: var(--title-color);
+     color: var(--body_color);
      font-weight: var(--font-medium);
      margin-right: var(--mb-0-25);
      margin-left: 2px;
@@ -199,7 +202,7 @@
 
  .home__scroll-arrow {
      font-size: 1.25rem;
-     color: var(--title-color);
+     color: var(--body_color);
  }
 
  /* ========breakdown=========== */

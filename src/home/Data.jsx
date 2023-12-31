@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import MovingText from 'react-moving-text'
 import MovingComponent from "react-moving-text"
 
+
 const Data = () => {
+  const [change, setChange] = useState([
+    "MERN STACK DEVELOPER",
+    "FJLL STACK DEVELOPER"
+  ])
+  
   return (
     <div className="home__data">
       <MovingComponent
@@ -16,12 +22,16 @@ const Data = () => {
         className="home__title">
         SAROJ GT
       </MovingComponent>
-      <MovingComponent type="typewriter"
-  dataText={[
-  'MERN STACK DEVELOPER',
-    'FULL STACK DEVELOPER',
+      <MovingComponent
+  type="typewriter"
+  dataText={change}
+  style={{
+    color: "white",
+  }}
+>
+  {setChange}
+</MovingComponent>
 
-]}   className = "typscripter"/>
       <p className="home__description">
         Work for money & design for love!
         <br />I am Saroj GT, MERN Stack Developer based in Nepal .

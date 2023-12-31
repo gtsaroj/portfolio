@@ -11,10 +11,13 @@
     top: 0%;
     left: 0px;
     z-index: var(--z-fixed);
-    background-color: #fff;
+    background-color: var(--body_background);
 
 }
 
+  
+
+  
 .nav {
     height: calc(var(--header-height) + 1.5rem);
     display: flex;
@@ -25,7 +28,7 @@
 
 .nav__logo,
 .nav__toggle {
-    color: var(--title-color);
+    color: var(--body_color);
     font-weight: var(--font-medium);
 }
 
@@ -41,7 +44,7 @@
     flex-direction: column;
     align-items: center;
     font-size: var(--small-font-size);
-    color: var(--title-color);
+    color: var(--body_color);
     font-weight: var(--font-medium);
     transition: .3s ease-in-out;
     padding: 4px 10px;
@@ -82,7 +85,7 @@
         bottom: -100%;
         left: 0;
         width: 100%;
-        background-color: #dedede;
+        background-color: var(--body_background);
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0, 0, 0.15);
         border-radius: 1.5rem 1.5rem 0 0;
@@ -90,7 +93,7 @@
     }
 
     .header {
-        background-color: #dedede;
+        background-color: var(--body_background);
     }
 
     /* show-menu */
@@ -117,11 +120,11 @@
         bottom: .5rem;
         font-size: 1.5rem;
         cursor: pointer;
-        color: var(--title-color);
+        color: var(--body_color);
     }
 
     .nav__close:hover {
-        color: var(--title-color-dark);
+        color: var(--body_color);
     }
 
     .nav__toggle {
@@ -133,6 +136,11 @@
     .nav__close,
     .nav__toggle {
         display: block;
+    }
+    .button-v1{
+        position: fixed;
+        top: 10px;
+        right: 20px;
     }
 
 }
