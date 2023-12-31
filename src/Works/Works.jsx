@@ -22,10 +22,10 @@ const Works = () => {
     }
   }, [item]);
 
-  function handleClick(e, index) {
-    e.preventDefault();
+  function handleClick(e,  index) {
     setItem({ name: e.target.textContent });
     setActive(index);
+   
   }
 
   return (
@@ -33,7 +33,7 @@ const Works = () => {
       <div className="projectNav_filter">
         {projectNav.map((item, index) => (
           <div
-            className={`projectNav ${item.name === projectNav[index].name ? "" : ""}`}
+            className={`projectNav ${index === active ? "active" : ""}`}
             key={index}
             onClick={(e) => handleClick(e, index)}
           >
