@@ -159,6 +159,7 @@
      justify-self: center;
      height: 300px;
      animation: profile__animate 0.5s ease-in-out forwards 0.1s;
+     border-radius: 94px;
      
  }
 

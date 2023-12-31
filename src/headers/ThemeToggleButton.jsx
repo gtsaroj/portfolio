@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Toogle.css";
 
 const ThemeToggleButton = () => {
@@ -13,6 +13,8 @@ const ThemeToggleButton = () => {
     if (e.target.checked) setDarkMode();
     else setLightMode();
   };
+
+
 
   return (
     <label class="switch" onChange={toggleTheme}>

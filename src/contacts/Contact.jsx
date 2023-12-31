@@ -94,7 +94,7 @@ setIsloading(true)
                                 placeholder='Write your project' required></textarea>
 
                         </div>
-                        <div className="button">
+                        <div className="button-v2">
                         <button type='submit'>{ isloading ? < div> <ReactLoading type={'spin'} color={'#ffffff'} height={'20px'} width={'20px'} /> </div>
                             : 'submit'
 }</button>

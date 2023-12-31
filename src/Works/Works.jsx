@@ -23,6 +23,7 @@ const Works = () => {
   }, [item]);
 
   function handleClick(e, index) {
+    e.preventDefault();
     setItem({ name: e.target.textContent });
     setActive(index);
   }

@@ -111,9 +111,7 @@
     .nav__icon {
         font-size: 1.2rem;
     }
-.nav__item{
-    
-}
+
     .nav__close {
         position: absolute;
         right: 1.3rem;
@@ -128,6 +126,8 @@
     }
 
     .nav__toggle {
+        z-index: +3;
+
         font-size: 1.1rem;
         cursor: pointer;
     }
@@ -138,9 +138,10 @@
         display: block;
     }
     .button-v1{
-        position: fixed;
-        top: 10px;
+        position:absolute;
+        top: 8px;
         right: 20px;
+        z-index: +1;
     }
 
 }

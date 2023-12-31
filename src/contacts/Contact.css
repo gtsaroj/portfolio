@@ -122,14 +122,14 @@ justify-content: baseline;
     padding: 1.5rem;
 
   }
-.button  button{
+.button-v2  button{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
   cursor: pointer;
-  margin: -45px 0px 0px 0px;
+  margin: -30px 0px 0px 0px;
   transition: 0.3s ease all;
   padding: 10px 90px;
   border-radius: 5px;
@@ -143,11 +143,11 @@ justify-content: baseline;
   
 }
 
-.button button:hover {
+.button-v2button:hover {
   border: 3px solid var(--line);
   background-color: var(--body_background);
 }
-.button button:checked{
+.button-v2 button:checked{
   transform: scale(1.05);
 }
 
@@ -201,10 +201,7 @@ justify-content: baseline;
     row-gap: 1rem;
   }
 
-  .contact__form-input,
-  .contact__form-div textarea {
-    width: 87%;
-  }
+ 
 
   .contact__form {
     margin: 0 auto;
