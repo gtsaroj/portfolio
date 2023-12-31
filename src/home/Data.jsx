@@ -6,7 +6,7 @@ import MovingComponent from "react-moving-text"
 const Data = () => {
   const [change, setChange] = useState([
     "MERN STACK DEVELOPER",
-    "FJLL STACK DEVELOPER"
+    "FuLL STACK DEVELOPER"
   ])
   
   return (

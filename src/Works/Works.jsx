@@ -33,7 +33,7 @@ const Works = () => {
       <div className="projectNav_filter">
         {projectNav.map((item, index) => (
           <div
-            className={`projectNav ${index === active ? "active" : ""}`}
+            className={`projectNav ${item.name === projectNav[index].name ? "" : ""}`}
             key={index}
             onClick={(e) => handleClick(e, index)}
           >
