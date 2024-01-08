@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import MovingText from 'react-moving-text'
-import MovingComponent from "react-moving-text"
-
+import MovingText from "react-moving-text";
+import MovingComponent from "react-moving-text";
 
 const Data = () => {
   const [change, setChange] = useState([
     "MERN STACK DEVELOPER",
-    "FULL STACK DEVELOPER"
-  ])
-  
+    "FULL STACK DEVELOPER",
+  ]);
+
   return (
-    <div className="home__data">
+    <div className="home__data" style={{
+      color: 'var(--body_color)'
+    }}>
+
       <MovingComponent
         type="effect3D"
         duration="1000ms"
@@ -19,18 +21,18 @@ const Data = () => {
         timing="ease"
         iteration="1"
         fillMode="none"
-        className="home__title">
+        className="home__title"
+      >
         SAROJ GT
       </MovingComponent>
       <MovingComponent
-  type="typewriter"
-  dataText={change}
-  style={{
-    color: "white",
-  }}
->
-  {setChange}
-</MovingComponent>
+        type="typewriter"
+        dataText={change}
+        className="changer"
+        style={{}}
+      >
+        {setChange}
+      </MovingComponent>
 
       <p className="home__description">
         Work for money & design for love!

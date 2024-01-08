@@ -14,6 +14,9 @@
      margin-right: 2rem;
      width: 100%;
  }
+ .changer{
+    color: aqua;
+ }
 
 
 
@@ -259,6 +262,7 @@
 
      .home__data {
          grid-column: 1/3;
+        
      }
 
      .home__img {
