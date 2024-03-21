@@ -55,7 +55,7 @@ const Qualification = () => {
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calender-alt"></i>
-                  2021 -Present
+                  2021 -2023
                 </div>
               </div>
               <div>
@@ -88,13 +88,13 @@ const Qualification = () => {
 
             <div className="qualification__data">
               <div>
-                <h2 className="qualification__title">web Development</h2>
+                <h2 className="qualification__title">Web Development</h2>
                 <span className="qualification__subtitle">
                   Udemy online course
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calender-alt"></i>
-                  2021-Present
+                  2021-2023
                 </div>
               </div>
               <div>
@@ -164,7 +164,7 @@ const Qualification = () => {
               <div>
                 <h2 className="qualification__title">web Development</h2>
                 <span className="qualification__subtitle">
-                  graphStick Nepal
+                  Graphstick Nepal
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calender-alt"></i>

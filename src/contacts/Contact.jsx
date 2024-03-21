@@ -5,6 +5,7 @@ import "./Contact.css"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ReactLoading from 'react-loading';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Contact = () => {
     const form = useRef();
@@ -46,7 +47,7 @@ setIsloading(true)
                             <i className="bx bx-mail-send contact__card-icon"></i>
                             <h3 className="contact-title">Email</h3>
                             <span className="contact__card-data">sarojgt326@gmail.com</span>
-                            <a href="mailto:exampleemail@gmail.com" className=" contact__button">Write me {" "}
+                            <a href="mailto:sarojgt326@gmail.com" className=" contact__button">Write me {" "}
                                 <i className="bx bx-right-arrow-alt  contact__button-icon"></i></a>
                         </div>
 
@@ -54,15 +55,15 @@ setIsloading(true)
                             <i className="bx bxl-whatsapp contact__card-icon"></i>
                             <h3 className="contact-title">Whatsapp</h3>
                             <span className="contact__card-data">+977-9848255044</span>
-                            <a href="" className="href contact__button">Write me{" "}
+                            <a href="https://api.whatsapp.com/send?phone=+977-9848255044" className="href contact__button">Write me{" "}
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
                         <div className="contact__card"  >
-                            <i className="bx bxl-messenger contact__card-icon"></i>
-                            <h3 className="contact-title">Messenger</h3>
+                          <LinkedInIcon/>
+                            <h3 className="contact-title">Linkedlen</h3>
                             <span className="contact__card-data">Saroj GT</span>
-                            <a href="" className="contact__button">Write me
+                            <a href="https://www.linkedin.com/in/saroj-gt-06a411255/" className="contact__button">Write me
                                 <i className="bx bx-right-arrow-alt  contact__button-icon"></i></a>
                         </div>
                     </div>
@@ -95,8 +96,8 @@ setIsloading(true)
 
                         </div>
                         <div className="button-v2">
-                        <button type='submit'>{ isloading ? < div> <ReactLoading type={'spin'} color={'#ffffff'} height={'20px'} width={'20px'} /> </div>
-                            : 'submit'
+                            <button style={ {fontSize : "17px"}} type='submit'>{ isloading ? < div> <ReactLoading type={'spin'} color={'#ffffff'} height={'20px'} width={'20px'} /> </div>
+                            : 'Submit'
 }</button>
                         </div>
 

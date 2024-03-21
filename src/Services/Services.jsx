@@ -135,15 +135,19 @@ const Services = () => {
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"> </i>
                   <p className="services__modal-info">
-                    Cross-browser compatibility
+                    Single Page Application
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"> </i>
                   <p className="services__modal-info">
-                    Accessibility implementation
+                    Implement authentication and authorization
                   </p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"> </i>
+                  <p className="services__modal-info">Implement SEO</p>
                 </li>
               </ul>
             </div>

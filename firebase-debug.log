@@ -1,0 +1,111 @@
+[debug] [2024-03-21T09:54:51.809Z] ----------------------------------------------------------------------
+[debug] [2024-03-21T09:54:51.811Z] Command:       /usr/local/bin/firebase /home/sarojgt/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2024-03-21T09:54:51.811Z] CLI Version:   13.1.0
+[debug] [2024-03-21T09:54:51.811Z] Platform:      linux
+[debug] [2024-03-21T09:54:51.812Z] Node Version:  v18.5.0
+[debug] [2024-03-21T09:54:51.815Z] Time:          Thu Mar 21 2024 15:39:51 GMT+0545 (Nepal Time)
+[debug] [2024-03-21T09:54:51.815Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-21T09:54:51.817Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-03-21T09:54:51.910Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-21T09:54:51.911Z] > authorizing via signed-in user (developersaroj326@gmail.com)
+[debug] [2024-03-21T09:54:51.911Z] [iam] checking project saroj-gt for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-21T09:54:51.912Z] > refreshing access token with scopes: []
+[debug] [2024-03-21T09:54:51.913Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-21T09:54:51.913Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-21T09:54:52.333Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-03-21T09:54:52.333Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-21T09:54:52.341Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/saroj-gt:testIamPermissions [none]
+[debug] [2024-03-21T09:54:52.341Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/saroj-gt:testIamPermissions x-goog-quota-user=projects/saroj-gt
+[debug] [2024-03-21T09:54:52.341Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/saroj-gt:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-21T09:54:52.738Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-03-21T09:54:52.738Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-03-21T09:54:53.847Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/saroj-gt:testIamPermissions 200
+[debug] [2024-03-21T09:54:53.848Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/saroj-gt:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-21T09:54:53.849Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/saroj-gt [none]
+[debug] [2024-03-21T09:54:54.483Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/saroj-gt 200
+[debug] [2024-03-21T09:54:54.483Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/saroj-gt {"projectId":"saroj-gt","projectNumber":"612161539260","displayName":"Saroj GT","name":"projects/saroj-gt","resources":{"hostingSite":"saroj-gt"},"state":"ACTIVE","etag":"1_e56f3531-6932-4f31-b184-ce9ad65d4804"}
+[info] 
+[info] === Deploying to 'saroj-gt'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-03-21T09:54:54.489Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/saroj-gt/versions [none]
+[debug] [2024-03-21T09:54:54.489Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/saroj-gt/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-03-21T09:54:55.810Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/saroj-gt/versions 200
+[debug] [2024-03-21T09:54:55.811Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/saroj-gt/versions {"name":"projects/612161539260/sites/saroj-gt/versions/869fa079b2a3320f","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[saroj-gt]: beginning deploy... 
+[info] i  hosting[saroj-gt]: found 17 files in build 
+[debug] [2024-03-21T09:54:55.818Z] [hosting] uploading with 200 concurrency
+[debug] [2024-03-21T09:54:55.942Z] [hosting] hash cache [YnVpbGQ] stored for 17 files
+[debug] [2024-03-21T09:54:55.943Z] [hosting][hash queue][FINAL] {"max":118,"min":5,"avg":22.235294117647058,"active":0,"complete":17,"success":17,"errored":0,"retried":0,"total":17,"elapsed":123}
+[debug] [2024-03-21T09:54:55.944Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/612161539260/sites/saroj-gt/versions/869fa079b2a3320f:populateFiles [none]
+[debug] [2024-03-21T09:54:55.944Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/612161539260/sites/saroj-gt/versions/869fa079b2a3320f:populateFiles {"files":{"/%PUBLIC_URL%/manifest.json":"f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec","/index.html":"a3f393d7f6b37ee330a353cb8692f8905ba019a58709cf95f73e52f0fb9c9a26","/asset-manifest.json":"da8e7bf386d7d25124c984bc575154a8099431ee4329a01dbb20877d79182db7","/robots.txt":"2544ca049f223a42bff01f72ad930a5edba75bbb7199d0f8430a02ff5aca16ec","/static/js/main.146d583c.js.LICENSE.txt":"09d81c63bc27e217e18d8d08b60bba12fa08a67b613b5bf843ae370a98fa11c4","/static/css/main.1287c70b.css":"40ad39da48e1ec77665ab2918392e72c1639b6092898c19d70f84454903c607f","/static/css/main.1287c70b.css.map":"61c19cfbb8ecd7a4630648f32ba9f02eb53f5e367bc231efc2e1123a9ce9b666","/static/media/sarojResume.cb51cbcaad53c6767ab9.pdf":"ad7882d27c3e5d6ab14ec3826c33f75e3ed9202139ff91a915d605769478e506","/static/media/f9.5621cd330a60f31dd8ef.png":"9f9bde3ebb1f266482903d60d4006aeceaa1151a1ee6b54441f3f3cd19415ef4","/static/media/f5.87d1c01a894f3cc04fe8.png":"257256c9750d825a99a5005f55c5a027bb6f6593c280c6c17eb6f774016eedcb","/static/media/profile-pic (4).8f2af62c8881e8b50bc3.png":"ceea22c88e3ec7bba8ecf249a28663799e84bc790523811b09dcfd15ab795d30","/static/js/main.146d583c.js":"6c79245c54bf23592a121d9ac39aa5586b560865df1cb8ab91c80db74ca5c5e2","/static/media/f4.bf3a44216b178e343bf5.png":"4ef4c79b92a47bd40e89d3dcfabaef100ca49ea31591e19439a141da914cfe8e","/profile.png":"abdc4df5ea46b294bc5f2fd8ce8ecac2b182e9a99cf206156f5dad206253605e","/static/media/rounded.5898a5a2d90127f01157.png":"0588501ca0e3301623983f5d8d04cd4bbe4594587f4e4eff9b1d4e6c4f4ef867","/rounded.png":"0588501ca0e3301623983f5d8d04cd4bbe4594587f4e4eff9b1d4e6c4f4ef867","/static/js/main.146d583c.js.map":"edbcb5bb9f7c309e37fe6e59ddbf9953138d06af67a906a9a698c85ac73cc65d"}}
+[debug] [2024-03-21T09:54:57.142Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/612161539260/sites/saroj-gt/versions/869fa079b2a3320f:populateFiles 200
+[debug] [2024-03-21T09:54:57.142Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/612161539260/sites/saroj-gt/versions/869fa079b2a3320f:populateFiles {"uploadRequiredHashes":["6c79245c54bf23592a121d9ac39aa5586b560865df1cb8ab91c80db74ca5c5e2","edbcb5bb9f7c309e37fe6e59ddbf9953138d06af67a906a9a698c85ac73cc65d","ad7882d27c3e5d6ab14ec3826c33f75e3ed9202139ff91a915d605769478e506","a3f393d7f6b37ee330a353cb8692f8905ba019a58709cf95f73e52f0fb9c9a26","61c19cfbb8ecd7a4630648f32ba9f02eb53f5e367bc231efc2e1123a9ce9b666","40ad39da48e1ec77665ab2918392e72c1639b6092898c19d70f84454903c607f","da8e7bf386d7d25124c984bc575154a8099431ee4329a01dbb20877d79182db7","09d81c63bc27e217e18d8d08b60bba12fa08a67b613b5bf843ae370a98fa11c4"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files"}
+[debug] [2024-03-21T09:54:57.145Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/6c79245c54bf23592a121d9ac39aa5586b560865df1cb8ab91c80db74ca5c5e2 [none]
+[debug] [2024-03-21T09:54:57.145Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/6c79245c54bf23592a121d9ac39aa5586b560865df1cb8ab91c80db74ca5c5e2 [stream]
+[debug] [2024-03-21T09:54:57.147Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/edbcb5bb9f7c309e37fe6e59ddbf9953138d06af67a906a9a698c85ac73cc65d [none]
+[debug] [2024-03-21T09:54:57.147Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/edbcb5bb9f7c309e37fe6e59ddbf9953138d06af67a906a9a698c85ac73cc65d [stream]
+[debug] [2024-03-21T09:54:57.148Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/ad7882d27c3e5d6ab14ec3826c33f75e3ed9202139ff91a915d605769478e506 [none]
+[debug] [2024-03-21T09:54:57.148Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/ad7882d27c3e5d6ab14ec3826c33f75e3ed9202139ff91a915d605769478e506 [stream]
+[debug] [2024-03-21T09:54:57.149Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/a3f393d7f6b37ee330a353cb8692f8905ba019a58709cf95f73e52f0fb9c9a26 [none]
+[debug] [2024-03-21T09:54:57.149Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/a3f393d7f6b37ee330a353cb8692f8905ba019a58709cf95f73e52f0fb9c9a26 [stream]
+[debug] [2024-03-21T09:54:57.150Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/61c19cfbb8ecd7a4630648f32ba9f02eb53f5e367bc231efc2e1123a9ce9b666 [none]
+[debug] [2024-03-21T09:54:57.150Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/61c19cfbb8ecd7a4630648f32ba9f02eb53f5e367bc231efc2e1123a9ce9b666 [stream]
+[debug] [2024-03-21T09:54:57.151Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/40ad39da48e1ec77665ab2918392e72c1639b6092898c19d70f84454903c607f [none]
+[debug] [2024-03-21T09:54:57.151Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/40ad39da48e1ec77665ab2918392e72c1639b6092898c19d70f84454903c607f [stream]
+[debug] [2024-03-21T09:54:57.152Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/da8e7bf386d7d25124c984bc575154a8099431ee4329a01dbb20877d79182db7 [none]
+[debug] [2024-03-21T09:54:57.152Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/da8e7bf386d7d25124c984bc575154a8099431ee4329a01dbb20877d79182db7 [stream]
+[debug] [2024-03-21T09:54:57.153Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/09d81c63bc27e217e18d8d08b60bba12fa08a67b613b5bf843ae370a98fa11c4 [none]
+[debug] [2024-03-21T09:54:57.153Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/09d81c63bc27e217e18d8d08b60bba12fa08a67b613b5bf843ae370a98fa11c4 [stream]
+[debug] [2024-03-21T09:54:57.153Z] [hosting][populate queue][FINAL] {"max":1204,"min":1204,"avg":1204,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1212}
+[debug] [2024-03-21T09:54:57.153Z] [hosting] uploads queued: 8
+[debug] [2024-03-21T09:54:58.596Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/a3f393d7f6b37ee330a353cb8692f8905ba019a58709cf95f73e52f0fb9c9a26 200
+[debug] [2024-03-21T09:54:58.596Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/a3f393d7f6b37ee330a353cb8692f8905ba019a58709cf95f73e52f0fb9c9a26 [stream]
+[debug] [2024-03-21T09:54:58.681Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/da8e7bf386d7d25124c984bc575154a8099431ee4329a01dbb20877d79182db7 200
+[debug] [2024-03-21T09:54:58.681Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/da8e7bf386d7d25124c984bc575154a8099431ee4329a01dbb20877d79182db7 [stream]
+[debug] [2024-03-21T09:54:58.683Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/ad7882d27c3e5d6ab14ec3826c33f75e3ed9202139ff91a915d605769478e506 200
+[debug] [2024-03-21T09:54:58.683Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/ad7882d27c3e5d6ab14ec3826c33f75e3ed9202139ff91a915d605769478e506 [stream]
+[debug] [2024-03-21T09:54:58.732Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/40ad39da48e1ec77665ab2918392e72c1639b6092898c19d70f84454903c607f 200
+[debug] [2024-03-21T09:54:58.733Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/40ad39da48e1ec77665ab2918392e72c1639b6092898c19d70f84454903c607f [stream]
+[debug] [2024-03-21T09:54:58.984Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/6c79245c54bf23592a121d9ac39aa5586b560865df1cb8ab91c80db74ca5c5e2 200
+[debug] [2024-03-21T09:54:58.984Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/6c79245c54bf23592a121d9ac39aa5586b560865df1cb8ab91c80db74ca5c5e2 [stream]
+[debug] [2024-03-21T09:54:59.194Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/09d81c63bc27e217e18d8d08b60bba12fa08a67b613b5bf843ae370a98fa11c4 200
+[debug] [2024-03-21T09:54:59.194Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/09d81c63bc27e217e18d8d08b60bba12fa08a67b613b5bf843ae370a98fa11c4 [stream]
+[debug] [2024-03-21T09:54:59.265Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/61c19cfbb8ecd7a4630648f32ba9f02eb53f5e367bc231efc2e1123a9ce9b666 200
+[debug] [2024-03-21T09:54:59.265Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/61c19cfbb8ecd7a4630648f32ba9f02eb53f5e367bc231efc2e1123a9ce9b666 [stream]
+[debug] [2024-03-21T09:54:59.957Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/edbcb5bb9f7c309e37fe6e59ddbf9953138d06af67a906a9a698c85ac73cc65d 200
+[debug] [2024-03-21T09:54:59.958Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/saroj-gt/versions/869fa079b2a3320f/files/edbcb5bb9f7c309e37fe6e59ddbf9953138d06af67a906a9a698c85ac73cc65d [stream]
+[debug] [2024-03-21T09:54:59.958Z] [hosting][upload queue][FINAL] {"max":2814,"min":1452,"avg":1867.875,"active":0,"complete":8,"success":8,"errored":0,"retried":0,"total":8,"elapsed":2815}
+[info] ✔  hosting[saroj-gt]: file upload complete 
+[debug] [2024-03-21T09:54:59.959Z] [hosting] deploy completed after 4147ms
+[debug] [2024-03-21T09:54:59.959Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "saroj-gt"
+    },
+    "version": "projects/612161539260/sites/saroj-gt/versions/869fa079b2a3320f"
+  }
+]
+[info] i  hosting[saroj-gt]: finalizing version... 
+[debug] [2024-03-21T09:54:59.961Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/saroj-gt/versions/869fa079b2a3320f updateMask=status%2Cconfig
+[debug] [2024-03-21T09:54:59.961Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/saroj-gt/versions/869fa079b2a3320f {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2024-03-21T09:55:01.022Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/saroj-gt/versions/869fa079b2a3320f 200
+[debug] [2024-03-21T09:55:01.022Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/saroj-gt/versions/869fa079b2a3320f {"name":"projects/612161539260/sites/saroj-gt/versions/869fa079b2a3320f","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-03-21T09:54:55.360768Z","createUser":{"email":"developersaroj326@gmail.com"},"finalizeTime":"2024-03-21T09:55:00.842957Z","finalizeUser":{"email":"developersaroj326@gmail.com"}}
+[debug] [2024-03-21T09:55:01.022Z] [hosting] finalized version for saroj-gt:[object Object]
+[info] ✔  hosting[saroj-gt]: version finalized 
+[info] i  hosting[saroj-gt]: releasing new version... 
+[debug] [2024-03-21T09:55:01.023Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/saroj-gt/channels/live/releases versionName=projects%2F612161539260%2Fsites%2Fsaroj-gt%2Fversions%2F869fa079b2a3320f
+[debug] [2024-03-21T09:55:01.023Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/saroj-gt/channels/live/releases {}
