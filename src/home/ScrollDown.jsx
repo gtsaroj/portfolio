@@ -1,11 +1,11 @@
 import React from 'react'
-
+import {ChevronsDown} from "lucide-react"
 const ScrollDown = () => {
   return (
     <div className="home__scroll">
-        <a href="#about" className='home__scroll-button button--flex'>
+        <a style={{color : "var(--body_color", borderRadius : "50px", padding: "2px", background: "var(--line)" } } href="#about" className='home__scroll-button button--flex'>
         
-              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+             <ChevronsDown style={{color : "var(--body_background)"}} size={"30"}/>
         </a>
     </div>
   )

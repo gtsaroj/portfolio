@@ -10,20 +10,20 @@ export const ProjectData = [
     github: "https://github.com/gtsaroj/graphstick-clientside",
   },
   {
-    id: 5,
-    image: require("./Projects/f5.png"),
-    title: "personal portfolio",
-    category: "Portfolio",
-    link: "https://saroj-gt.web.app/",
-    github: "https://github.com/gtsaroj/portfolio",
-  },
-  {
     id: 6,
     image: require("./Projects/f9.png"),
     title: "graphstick server",
     category: "Ecommerce",
     link: "https://graphstickserver.onrender.com/admin",
     github: "https://github.com/gtsaroj/graphstick-server",
+  },
+  {
+    id: 7,
+    image: require("./Projects/Screenshot from 2024-03-31 13-57-19.png"),
+    title: "Xmato",
+    category: "Ecommerce",
+    link: "https://xmatonepal.web.app/",
+    github: "https://github.com/gtsaroj/x-mato_frontend",
   },
 ];
 

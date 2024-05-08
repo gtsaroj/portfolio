@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import './Scroll.css';
+import React, { useEffect, useState } from "react";
+import "./Scroll.css";
 
 const ScrollUp = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -9,16 +9,16 @@ const ScrollUp = () => {
       setScrollPosition(window.scrollY);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
-      top:0,
-      behavior: 'smooth',
+      top: 0,
+      behavior: "smooth",
     });
   };
 
@@ -27,9 +27,12 @@ const ScrollUp = () => {
   }
 
   return (
-    <a href="#" className="scrollUp" onClick={scrollToTop}>
-      <i className="uil uil-arrow-up scrollUp__icon"></i>
-    </a>
+    <button className="scrollUp" onClick={scrollToTop}>
+      <i
+        style={{ color: "var(--body_background)" }}
+        className="uil uil-arrow-up scrollUp__icon"
+      ></i>
+    </button>
   );
 };
 
